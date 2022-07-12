@@ -1,0 +1,112 @@
+/*===== General ======*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+  --background-color: #f3f5f7;
+  --linear-gradient: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  --border-color: hsla(0, 0%, 100%, 0.2);
+  --background-input: hsla(0, 0%, 100%, 0.2);
+  --white-color: #ffffff;
+  --black-color: rgba(19, 19, 31, 0.05);
+  --text-color: #1A202C;
+}
+
+body {
+   background-color: var(--background-color);
+   background-size: cover;
+   text-align: center;
+   font-family: 'Lexend Deca', sans-serif;;
+}
+
+/*===== Section Cards ======*/
+#container {
+    margin: 0 auto;
+    width: 21.875%;
+    height: 200px;
+    background: var(--linear-gradient);
+    padding: 1.0483%;
+}
+
+.container-list, .container-links, a {
+  display: flex;
+  justify-content: space-between;
+  color: hsla(0, 0%, 100%, 1);
+  text-decoration: none;
+}
+
+input {
+    margin: 0 auto;
+    position: relative;
+    width: 99.375% /*374/16*/;
+    height: 2.5rem;
+    left: 1.0534em auto;
+    top: 3.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: var(--background-input);
+    line-height: normal;
+}
+
+::placeholder {
+    color: var(--white-color);
+    padding: 2.75rem;
+}
+
+#cards {
+    position: relative;
+    width: 20.375%;
+    height: 14.6875%;
+    left: 1.5rem auto;
+    top: 3.125rem;
+    background: #fff;
+    box-shadow: 0 0 10px var(--black-color);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 1.5625rem;
+    padding-bottom: 1.3625rem;
+}
+
+.data-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 44%, 1); 
+}
+
+.card { 
+    display: relative;
+    padding: 1.25rem;
+}
+
+.title-card {
+    width: 88.912%;
+    height: 2.875%;
+    left: 2.25%;
+    top: 19.4375%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.text-card {
+    width: 95.2625%; padding-bottom: 3px;
+    height: 4.5625%;
+    left: 2.3125%;
+    top: 31.25%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 26px;
+    color: var(--text-color);
+    text-align: justify;
+   
+}
